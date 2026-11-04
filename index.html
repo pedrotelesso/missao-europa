@@ -198,6 +198,12 @@ a{color:inherit}
 .copy:hover{background:var(--cream)}
 .copy.is-done{background:var(--gold);color:var(--navy)}
 .pix .pix-note{margin:12px 0 0;font-size:var(--t-xs);line-height:1.45;color:rgba(255,255,255,.82)}
+.group{grid-column:1 / -1;margin-top:16px;padding:20px 18px;border-radius:16px;background:var(--cream);border:1.5px solid var(--gold)}
+.group .label{color:var(--red);font-size:.6875rem}
+.group-name{display:block;margin:6px 0 12px;font-family:var(--f-display);font-size:1.35rem;line-height:1.1;font-weight:800;font-stretch:104%;color:var(--navy)}
+.group-list{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:6px}
+.group-list li{display:flex;gap:10px;align-items:baseline;font-size:var(--t-sm);color:var(--ink-soft)}
+.group-list li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--gold);transform:translateY(-2px)}
 .wa{margin-top:18px}
 .wa-note{margin:10px 0 0;font-size:var(--t-xs);color:var(--ink-soft);text-align:center}
 
@@ -433,7 +439,7 @@ a{color:inherit}
       <aside class="panel" aria-labelledby="t-como">
         <div class="panel-head">
           <span class="label" id="t-como">Como contribuir</span>
-          <small>3 passos</small>
+          <small>4 passos</small>
         </div>
         <ol class="howto">
           <li>
@@ -479,6 +485,26 @@ a{color:inherit}
               <span>Quero ser mantenedor</span>
             </a>
             <p class="wa-note">Abre o WhatsApp com uma mensagem pronta. É só completar seus dados e enviar.</p>
+          </li>
+          <li>
+            <span class="howto-n">4</span>
+            <div class="howto-body">
+              <h3>Entre no grupo dos parceiros</h3>
+              <p>Um grupo no WhatsApp só para quem contribui com a missão.</p>
+            </div>
+            <div class="group">
+              <span class="label">Grupo no WhatsApp</span>
+              <strong class="group-name">Parceiros da Missão Europa</strong>
+              <ul class="group-list">
+                <li>Informações da missão</li>
+                <li>Atualizações direto de Toledo</li>
+                <li>Pedidos de oração e próximos passos</li>
+              </ul>
+              <a class="btn btn--gold btn--block" id="group-btn" target="_blank" rel="noopener" href="https://chat.whatsapp.com/KDH39F8Y5dHGq3wdFdPhMI">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.2 3-5 6-5s5.4 1.8 6 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14.2c2.3.3 4 1.9 4.5 4.8"/></svg>
+                <span>Entrar no grupo</span>
+              </a>
+            </div>
           </li>
         </ol>
       </aside>
